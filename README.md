@@ -127,13 +127,42 @@ mpirun -np 8 diabat input.inp
 
 ## Input files and examples
 
-**Diabat** uses a block-structured script input format. A typical job block starts with a `$` marker and ends with `$`.
+Diabat uses a block-structured script input format. A script file is organized as a tree of named blocks.
 
-For example, a diabatization input may contain a block such as:
+A block starts with one or more `$` markers followed by the block name, and ends with a line containing the same number of `$` markers. The number of `$` markers indicates the block level:
+
+```text
+$block     # first-level block
+  $$subblock    # second-level block
+  $$
+$
+```
+
+A block may contain keywords and subblocks. Keywords are written in the form:
+
+```text
+keyword = value
+```
+
+Everything after `#` on the same line is treated as a comment.
+
+For example, a simple diabatization input may contain:
 
 ```text
 $diabat-fphd
-  ...
+  # Electronic-state data
+  $$statepack
+    mofile = 'path/to/orbital/file'
+    statefile = 'path/to/state/file'
+    state_index = 1..8
+  $$
+
+  # Fragment definition
+  $$frag
+    num_frag = 2
+    frag 1 = 1..30
+    frag 2 = 31..60
+  $$
 $
 ```
 
