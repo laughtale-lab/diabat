@@ -112,7 +112,7 @@ Run a **Diabat** job with an input file:
 diabat input.inp
 ```
 
-For an MPI run:
+For an MPI run (recommended):
 
 ```bash
 mpirun -np 8 diabat input.inp
@@ -123,12 +123,6 @@ For a hybrid MPI/OpenMP run:
 ```bash
 export OMP_NUM_THREADS=4
 mpirun -np 8 diabat input.inp
-```
-
-For pure MPI calculations, it is usually recommended to set:
-
-```bash
-export OMP_NUM_THREADS=1
 ```
 
 ## Input files and examples
