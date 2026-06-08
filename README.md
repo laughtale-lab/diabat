@@ -127,7 +127,7 @@ mpirun -np 8 diabat input.inp
 
 ## Input files and examples
 
-Diabat uses a block-structured script input format. A script file is organized as a tree of named blocks.
+**Diabat** uses a block-structured script input format. A script file is organized as a tree of named blocks.
 
 A block starts with one or more `$` markers followed by the block name, and ends with a line containing the same number of `$` markers. The number of `$` markers indicates the block level:
 
