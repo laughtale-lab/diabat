@@ -184,6 +184,9 @@ examples/
 data/
   ...
 
+script/
+  ...
+
 licenses/
   ...
 
