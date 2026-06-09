@@ -1,0 +1,10 @@
+Program: Diabat
+Version: 1.9.8
+Release type: binary package
+Package license: PolyForm Noncommercial License 1.0.0
+SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+Platform: linux-x86_64
+Build type: MPI + OpenMP + Intel MKL
+Compiler: Intel ifort 19.0.1
+MPI: Intel MPI 2021.7
+Release date: 2026-06-09

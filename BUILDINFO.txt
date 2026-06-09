@@ -1,0 +1,121 @@
+Diabat 1.9.8 build information
+==============================
+
+Program:
+  Diabat
+
+Version:
+  1.9.8
+
+Release type:
+  Binary package
+
+Package license:
+  PolyForm Noncommercial License 1.0.0
+
+SPDX-License-Identifier:
+  PolyForm-Noncommercial-1.0.0
+
+
+Build platform
+--------------
+
+Operating system:
+  Red Hat Enterprise Linux Server 7.9 (Maipo)
+
+Kernel:
+  Linux login01.hpc.local 3.10.0-1160.el7.x86_64
+
+Architecture:
+  x86_64
+
+
+Compiler and parallel libraries
+-------------------------------
+
+Fortran compiler:
+  Intel Fortran Compiler ifort 19.0.1.144 20181018
+
+MPI:
+  Intel MPI Library for Linux, Version 2021.7
+  Build 20221022
+
+MPI root:
+  /share/intel/2022.3.1/mpi/2021.7.1
+
+MPI Fortran wrapper:
+  mpiifort
+
+BLAS/LAPACK:
+  Intel MKL BLAS and LAPACK
+
+MKL root:
+  /share/intel/2019u1/compilers_and_libraries_2019.1.144/linux/mkl
+
+
+Build options
+-------------
+
+Fortran flags:
+  -mkl=parallel -qopenmp -mcmodel large -O2 -fpp -fPIC
+
+Parallelization:
+  MPI enabled
+  OpenMP enabled
+  Intel MKL parallel mode enabled
+
+
+Executable
+----------
+
+Main executable:
+  bin/diabat
+
+Executable type:
+  ELF 64-bit LSB executable, x86-64, dynamically linked,
+  for GNU/Linux 2.6.32, stripped
+
+Build ID:
+  4b15b77915eb6fd13c8fb6cd22016ff7a231bbbc
+
+Runtime dependencies
+--------------------
+
+This binary dynamically links to Intel MKL, Intel OpenMP runtime,
+Intel MPI runtime, Intel Fortran runtime, standard Linux system libraries,
+and libgcc_s.
+
+Key linked libraries include:
+  libmkl_intel_lp64.so
+  libmkl_intel_thread.so
+  libmkl_core.so
+  libiomp5.so
+  libmpifort.so.12
+  libmpi.so.12
+  libifport.so.5
+  libifcoremt.so.5
+  libimf.so
+  libsvml.so
+  libintlc.so.5
+  libgcc_s.so.1
+
+
+Runtime notes
+-------------
+
+For a normal MPI run:
+  mpirun -np 8 diabat input.inp
+
+For a hybrid MPI/OpenMP run:
+  export OMP_NUM_THREADS=4
+  mpirun -np 4 diabat input.inp
+
+For pure MPI calculations, it is usually recommended to set:
+  export OMP_NUM_THREADS=1
+
+
+Build record
+------------
+
+Build date:
+  2026-06-08 22:23:44 UTC+8
