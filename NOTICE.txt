@@ -1,0 +1,7 @@
+Required Notice: Diabat 1.9.8
+Required Notice: Copyright (c) 2021-2023 Xiamen University.
+                 Copyright (c) 2023-2026 Yu-Chen Wang
+Diabat 1.9.8 binary package is distributed under the
+PolyForm Noncommercial License 1.0.0.
+
+SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
