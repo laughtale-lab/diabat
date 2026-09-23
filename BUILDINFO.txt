@@ -1,11 +1,11 @@
-Diabat 1.9.8 build information
+Diabat 2.0 build information
 ==============================
 
 Program:
   Diabat
 
 Version:
-  1.9.8
+  2.0
 
 Release type:
   Binary package
@@ -24,7 +24,7 @@ Operating system:
   Red Hat Enterprise Linux Server 7.9 (Maipo)
 
 Kernel:
-  Linux login01.hpc.local 3.10.0-1160.el7.x86_64
+  Linux 3.10.0-1160.el7.x86_64
 
 Architecture:
   x86_64
@@ -40,17 +40,11 @@ MPI:
   Intel MPI Library for Linux, Version 2021.7
   Build 20221022
 
-MPI root:
-  /share/intel/2022.3.1/mpi/2021.7.1
-
 MPI Fortran wrapper:
   mpiifort
 
 BLAS/LAPACK:
   Intel MKL BLAS and LAPACK
-
-MKL root:
-  /share/intel/2019u1/compilers_and_libraries_2019.1.144/linux/mkl
 
 
 Build options
@@ -75,8 +69,6 @@ Executable type:
   ELF 64-bit LSB executable, x86-64, dynamically linked,
   for GNU/Linux 2.6.32, stripped
 
-Build ID:
-  4b15b77915eb6fd13c8fb6cd22016ff7a231bbbc
 
 Runtime dependencies
 --------------------
@@ -106,8 +98,8 @@ Runtime notes
 For a normal MPI run:
   mpirun -np 8 diabat input.inp
 
-For a hybrid MPI/OpenMP run:
-  export OMP_NUM_THREADS=4
+For a hybrid MPI/OpenMP run (4-processor MPI with 2-thread OpenMP):
+  export OMP_NUM_THREADS=2
   mpirun -np 4 diabat input.inp
 
 For pure MPI calculations, it is usually recommended to set:
@@ -117,5 +109,5 @@ For pure MPI calculations, it is usually recommended to set:
 Build record
 ------------
 
-Build date:
-  2026-06-08 22:23:44 UTC+8
+Build time (from executable mtime):
+  2026-09-23 11:17:20 UTC
