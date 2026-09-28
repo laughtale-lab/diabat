@@ -29,7 +29,7 @@ Applicable fragment-based methods support **Löwdin** (default) and **Mulliken**
 
 ### Orbital analysis (`postorb`)
 
-The `postorb` module supports orbital information and integral analysis, as well as the generation of spatial grid data for orbital wave functions and electron densities.
+The `postorb` module supports orbital information analysis and orbital integral calculations, as well as the generation of spatial grid data for orbital wave functions and electron densities.
 
 ### Electronic-state analysis (`postwfn`)
 
