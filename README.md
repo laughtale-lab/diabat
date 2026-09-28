@@ -20,7 +20,7 @@ Diabat 2.0 provides the following methods and utilities:
 | --- | --- |
 | `diabat-fphd` | Fragment Particle-Hole Densities (FPHD) diabatization for multichromophoric systems. |
 | `diabat-gmh` | Multistate Generalized Mulliken-Hush (GMH) method for charge-transfer problems in dimer systems. |
-| `diabat-fcd` | Multistate Fragment Charge Difference (FCD) method for charge-transfer problems. |
+| `diabat-fcd` | Multistate Fragment Charge Difference (FCD) method for charge-transfer problems in dimer systems. |
 | `diabat-fed` | Fragment Excitation Difference (FED) method for excitation-energy transfer in dimer systems. |
 | `diabat-fedfcd` | Multistate FED-FCD method for dimer systems with coupled excitation-energy-transfer and charge-transfer characters. |
 | `diabat-utils-phasefix` | Reference-based phase alignment of electronic-state wave functions. |
