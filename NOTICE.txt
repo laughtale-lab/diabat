@@ -1,0 +1,19 @@
+Required Notice: Diabat 2.0
+Required Notice: Copyright (c) 2021-2023 Xiamen University.
+                 Copyright (c) 2023-2026 Yu-Chen Wang
+Diabat 2.0 binary package is distributed under the
+PolyForm Noncommercial License 1.0.0.
+
+SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+
+Example data notice:
+
+The `data/` directory contains orbital and electronic-state files exported using Diabat from electronic-structure calculations originally performed with Gaussian 16 and Q-Chem 6.3.
+
+The distributed files replace the original third-party-generated orbital and electronic-state files while retaining the filenames and paths expected by the supplied examples. The original third-party-generated calculation results are not included in the distribution.
+
+The original calculation input scripts are provided to document the computational settings and enable users with access to the corresponding software to regenerate the original electronic-structure data.
+
+See `data/README.md` for details about data provenance and file correspondence.
+
+Any applicable third-party rights and license conditions remain unaffected by the data conversion or by this notice.

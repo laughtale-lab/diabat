@@ -1,0 +1,6 @@
+This Diabat binary package does not bundle third-party runtime
+libraries, except for standard system/runtime libraries required by the
+platform.
+
+The executable may dynamically link to compiler runtime libraries,
+MPI libraries, BLAS, and LAPACK available on the user's system.
