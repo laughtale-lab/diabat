@@ -33,7 +33,7 @@ The `postorb` module supports orbital information analysis and orbital integral 
 
 ### Electronic-state analysis (`postwfn`)
 
-The `postwfn` module provides density-matrix, transition-density-matrix, and difference-density-matrix analyses. Available applications include natural orbitals, natural transition orbitals, natural difference orbitals, transition properties, and spatial grid data for densities, transition densities, hole/particle densities, and attachment/detachment densities.
+The `postwfn` module provides functions based on density matrices, transition density matrices, and difference density matrices. Available functions include the construction natural orbitals, natural transition orbitals, and natural difference orbitals, the computation of various transition properties, and the generation of spatial grid data for electron densities, transition densities, hole/particle densities, and attachment/detachment densities.
 
 ## Download
 
