@@ -2,7 +2,7 @@
 <p align="center">
   <img src="images/diabat-logo.png"
        alt="Diabat 2.0 ASCII Logo"
-       width="800">
+       width="1000">
 </p>
 
 # Diabat
